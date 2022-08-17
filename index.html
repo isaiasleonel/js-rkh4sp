@@ -1,0 +1,34 @@
+<div id="app"></div>
+<h1>MALTA</h1>
+<form id="form_ceveza">
+  <label for="cerveza"> Cerveza</label>
+  <select name="cerveza" id="cerveza">
+    <option value="blondie">Blondie</option>
+    <option value="ipa">Ipa</option>
+    <option value="porter">Porter</option>
+  </select>
+  <label for="cantidad">Cantidad</label>
+  <input type="number" name="cantidad" id="cantidad" required />
+  <button id="btn_agregar" type="submit">Agregar</button>
+</form>
+<br />
+<h2>Su pedido</h2>
+<br />
+<table class="lista_pedido">
+  <thead>
+    <tr>
+      <td>Cervezas</td>
+      <td>Cantidad</td>
+    </tr>
+  </thead>
+  <tbody id="tabla_beer"></tbody>
+</table>
+<br />
+<button id="btn_vaciar">Vaciar carrito</button>
+<br />
+<form action="" id="form_cupon">
+  <label for="cupon"> Cupon de descuento</label>
+  <input type="text" id="cupon" name="cupon" />
+  <button id="btn_aplicar" type="submit">APLICAR</button>
+</form>
+<h3>TOTAL:$ <span id="precio_total"></span></h3>
